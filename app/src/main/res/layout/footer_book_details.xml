@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/books_details_similar_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Similar Books"
+        android:fontFamily="@font/arbutus_slab"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/footer_book_details_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

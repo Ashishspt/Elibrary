@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="270dp"
+        android:layout_height="170dp"
+        android:background="#fff"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0.1dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp">
+
+                <ImageView
+                    android:id="@+id/latest_book_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/splashscreen"
+                    android:scaleType="centerCrop"
+                    >
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/book_name"
+                    android:fontFamily="@font/rosemarry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The World Of Abstract Art"
+                    android:textSize="18sp"
+                    android:textStyle="bold">
+
+                </TextView>
+                <TextView
+                        android:id="@+id/author"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/rosemarry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Acis Sapkota"
+                        android:textSize="12dp" >
+
+                    </TextView>
+                <androidx.appcompat.widget.AppCompatRatingBar
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rating="3"
+                    android:numStars="5"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    >
+
+                </androidx.appcompat.widget.AppCompatRatingBar>
+
+               <Button
+                   android:id="@+id/btn_read"
+                   android:layout_width="80dp"
+                   android:layout_height="25dp"
+                   android:text="Read"
+                   android:textAllCaps="false"
+                   android:fontFamily="@font/arbutus_slab"
+                   android:layout_gravity="center"
+                   android:background="@drawable/read_btn_design">
+
+
+               </Button>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
